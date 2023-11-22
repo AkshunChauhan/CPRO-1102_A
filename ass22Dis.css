@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 20px;
+    color: #495057;
+}
+
+h1, h2, h3 {
+    color: #343a40;
+}
+
+h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.ui-accordion-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.ui-accordion-content {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.ui-slider-handle {
+    background-color: #007bff;
+    border: 2px solid #fff;
+}
+
+.draggable {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.droppable {
+    width: 150px;
+    height: 150px;
+    background-color: #dc3545;
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resizable {
+    width: 150px;
+    height: 150px;
+    background-color: #28a745;
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.selectable {
+    width: 100px;
+    height: 100px;
+    background-color: #ffc107;
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.effect-demo {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

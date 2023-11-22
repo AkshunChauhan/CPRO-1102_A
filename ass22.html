@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery UI Components</title>
+    <link rel="stylesheet" href="ass22Dis.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+
+    <h1>jQuery UI Components</h1>
+
+    <h2>Interactions</h2>
+    <div class="draggable" id="draggable">Drag me</div>
+    <div class="droppable" id="droppable">Drop here</div>
+    <div class="resizable" id="resizable">Resize me</div>
+    <div class="selectable" id="selectable">Select me</div>
+
+    <div id="widgets">
+        <h2>Accordion</h2>
+        <div id="accordion">
+            <h3>Section 1</h3>
+            <div>
+                <p>Content for section 1.</p>
+            </div>
+            <h3>Section 2</h3>
+            <div>
+                <p>Content for section 2.</p>
+            </div>
+            <h3>Section 3</h3>
+            <div>
+                <p>Content for section 3.</p>
+            </div>
+        </div>
+
+        <h2>Autocomplete</h2>
+        <input type="text" id="autocomplete">
+
+        <h2>Date Picker</h2>
+        <input type="text" id="datepicker">
+
+        <h2>Slider</h2>
+        <div id="slider"></div>
+    </div>
+
+    <div id="effects">
+        <h2>Show & Hide</h2>
+        <button id="resetShowHide">Reset Show/Hide</button>
+        <div class="effect-demo" id="showHide">Show/Hide</div>
+
+
+        <h2>Explode</h2>
+        <button id="resetExplode">Reset Explode</button>
+        <div class="effect-demo" id="explode">Explode</div>
+
+
+        <h2>Fade-in & Fade-out</h2>
+        <button id="resetFadeInOut">Reset Fade In/Out</button>
+        <div class="effect-demo" id="fadeInOut">Fade In/Out</div>
+
+
+        <h2>Color Animation</h2>
+        <button id="resetColorAnimation">Reset Color Animation</button>
+        <div class="effect-demo" id="colorAnimation">Color Animation</div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            // Draggable
+            $("#draggable").draggable();
+
+            // Droppable
+            $("#droppable").droppable({
+                drop: function (event, ui) {
+                    $(this).addClass("ui-state-highlight").text("Dropped!");
+                }
+            });
+
+            // Resizable
+            $("#resizable").resizable();
+
+            // Selectable
+            $(".selectable").selectable();
+
+            // Accordion
+            $("#accordion").accordion();
+
+            // Autocomplete
+            var availableTags = ["Apple", "Banana", "Orange", "Mango", "Grapes"];
+            $("#autocomplete").autocomplete({
+                source: availableTags
+            });
+
+            // Date Picker
+            $("#datepicker").datepicker();
+
+            // Slider
+            $("#slider").slider();
+
+        });
+        $("#showHide").click(function () {
+            $(this).toggle("blind");
+        });
+        $("#explode").click(function () {
+            $(this).toggle("explode");
+        });
+        $("#fadeInOut").click(function () {
+            $(this).fadeToggle();
+        });
+        $("#colorAnimation").click(function () {
+            $(this).animate({
+                backgroundColor: "#e74c3c",
+                color: "#fff"
+            }, 1000);
+        });
+        $("#resetShowHide").click(function () {
+            $("#showHide").toggle("blind");
+        });
+        $("#resetExplode").click(function () {
+            $("#explode").toggle("explode");
+        });
+        $("#resetFadeInOut").click(function () {
+            $("#fadeInOut").fadeToggle();
+        });
+        $("#resetColorAnimation").click(function () {
+            $("#colorAnimation").animate({
+                backgroundColor: "#3498db",
+                color: "#fff"
+            }, 1000);
+        });
+    </script>
+
+</body>
+
+</html>
