@@ -1,0 +1,102 @@
+body {
+    background-color: #EEEEEE;
+    margin: 0;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    transform: scale(1);
+}
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 20px 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease-out;
+    backdrop-filter: blur(8px) brightness(1.2);
+    -webkit-backdrop-filter: blur(8px) brightness(1.2);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 16px;
+    mask-image: linear-gradient(black 70%, transparent);
+    -webkit-mask-image: linear-gradient(black 70%, transparent);
+}
+
+.mask a {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.674);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.list {
+    list-style-type: none;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.list li {
+    margin-left: 20px;
+}
+
+
+.container {
+    margin-top: 100px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label,
+form input,
+form textarea {
+    color: black;
+}
+
+form label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #0F044C;
+    border-color: #0F044C;
+}
+
+.btn-primary:hover {
+    background-color: #141E61;
+    border-color: #141E61;
+}
+
+footer {
+    background-color: transparent;
+    /* Darken the footer color */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: -100%;
+    /* Initially hidden below the viewport */
+    transition: bottom 0.3s ease-out;
+    /* Add a subtle box shadow */
+}
