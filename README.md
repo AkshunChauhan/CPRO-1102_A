@@ -31,7 +31,11 @@ This project uses two main stylesheets:
 
 - `ass22Dis.css`: A stylesheet specifically created for Question 1.
 
+- `catvideo.mp4`: Video file serving as the background for `blog.html` and `contact_us.html`.
+
 ## Additional Notes
+
+- The `catvideo.mp4` file is utilized as the background video for both `blog.html` and `contact_us.html`. Ensure that the video file is appropriately linked and plays seamlessly in the background.
 
 - Make sure to check and adhere to the guidelines mentioned in `dis.css` for consistent styling across different pages.
 
